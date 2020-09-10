@@ -11,7 +11,7 @@ class Product extends Model
                     'rating', 'sold_count', 'review_count', 'price'
     ];
 
-    protected casts = [
+    protected $casts = [
         'on_sale' => 'boolean',
     ];
 
