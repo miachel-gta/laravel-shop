@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Exceptions\InvalidRequestException;
+use App\Http\Requests\ApplyRefundRequest;
 use App\Models\Order;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\HasResourceActions;
@@ -113,4 +114,5 @@ class OrdersController extends Controller
 
         return redirect()->back();
     }
+
 }
