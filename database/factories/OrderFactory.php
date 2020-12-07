@@ -23,7 +23,7 @@ $factory->define(Order::class, function (Faker $faker) {
         // 为了避免出现逻辑错误，我们只选择没有最低金额限制的优惠券
         $coupon = CouponCode::query()->where('min_amount', 0)->inRandomOrder()->first();
         // 增加优惠券的使用量
-        $coupon->changUsed();
+        $coupon->changeUsed();
     }
 
     return [
